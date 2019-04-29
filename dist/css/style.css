@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  color: #58402c;
+}
+
+nav {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+nav img {
+  width: 250px;
+  height: 90%;
+}
+
+nav .topbar-links span {
+  padding: 15px;
+  color: #d70f64;
+}
+
+nav .hamburger-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 765px) {
+  nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .topbar-links {
+    display: none;
+  }
+
+  nav img {
+    width: 200px;
+  }
+
+  nav .hamburger-menu {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+  }
+
+  nav .hamburger-menu i {
+    font-size: 150%;
+    color: #d70f64;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  nav img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+  }
+}
+
+.section1 {
+  width: 100%;
+  height: 92vh;
+}
+
+.section1 .backg-img {
+  background-image: url("https://www.foodora.com/wp-content/uploads/2017/08/4000x2000_parallax_4-1.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.section1 .backg-img h1 {
+  color: white;
+  font-size: 32px;
+}
+
+.section1 .sect-footer {
+  position: absolute;
+  bottom: -3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 40px;
+  width: 100%;
+}
+
+.section1 .sect-footer span {
+  color: white;
+}
+
+.section1 .sect-footer .flags-wrapper img {
+  padding: 10px;
+}
+
+.section1 .sect-footer .hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 765px) {
+  .section1 {
+    height: 100vh;
+  }
+
+  .section1 .backg-img {
+    height: 52vh;
+  }
+
+  .section1 .sect-footer {
+    height: 50%;
+    background: white;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .section1 .sect-footer span {
+    color: #d70f64;
+    font-size: 24px;
+  }
+
+  .section1 .sect-footer .flags-wrapper {
+    display: none;
+  }
+
+  .section1 .sect-footer .flags-wrapper-responsive {
+    display: inline-block;
+  }
+
+  .section1 .sect-footer .flags-wrapper-responsive img {
+    width: 30px;
+    padding: 0;
+    margin: 15px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section1 .sect-footer .flags-wrapper img {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 240px) {
+  .section1 {
+    height: auto;
+  }
+
+  .section1 .sect-footer {
+    padding: 0;
+    height: 600px;
+  }
+}
+
+.section2 {
+  height: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section2 h2 {
+  color: #d70f64;
+  font-size: 30px;
+  margin: 40px;
+}
+
+.section2 p {
+  width: 60%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.section2 button {
+  color: #fff;
+  background-color: #d70f64;
+  font-weight: 500;
+  font-size: 14px;
+  height: 48px;
+  padding: 0 15px;
+  cursor: pointer;
+  margin: 50px 0;
+  outline: none;
+  border: none;
+  width: 10%;
+  min-width: 160px;
+}
+
+@media only screen and (max-width: 865px) {
+  .section2 {
+    height: 500px;
+  }
+
+  .section2 button {
+    width: 30%;
+  }
+}
+
+.section3 {
+  background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_careers_parallax_2.jpg");
+  width: 100%;
+  height: 940px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section4 {
+  background-image: url("https://www.foodora.com/wp-content/uploads/2015/07/4000x2000_parallax_tuna.jpg");
+  width: 100%;
+  height: 940px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section3 h2,
+.section4 h2 {
+  color: #d70f64;
+  font-size: 30px;
+  margin: 40px 0;
+}
+
+.section3 p,
+.section4 p {
+  color: white;
+  text-align: center;
+  width: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .section2 {
+    justify-content: space-around;
+  }
+
+  .section2 p {
+    width: 95%;
+    font-size: 90%;
+  }
+
+  .section2 h2 {
+    margin: 0;
+  }
+
+  .section2 button {
+    margin: 0;
+    width: 35%;
+  }
+
+  .section3,
+  .section4 {
+    height: 450px;
+  }
+
+  .section3 p,
+  .section4 p {
+    width: 100%;
+  }
+}
+
+.section5 {
+  background: #d70f64;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 940px;
+}
+
+.section5 h2 {
+  font-size: 30px;
+  color: white;
+}
+
+.section5 p {
+  text-align: center;
+  color: white;
+  width: 60%;
+  margin: 30px 0;
+}
+
+.section5 button {
+  color: #d70f64;
+  background-color: #fff;
+  font-weight: 500;
+  width: 10%;
+  height: 48px;
+  min-width: 160px;
+  font-size: 14px;
+  height: 48px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .section5 {
+    height: 500px;
+  }
+}
+

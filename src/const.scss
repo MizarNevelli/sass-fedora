@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+  color: #58402c;
+}
+
+
+@mixin flexed-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin pink-button {
+  color: #fff;
+  background-color: #d70f64;
+  font-weight: 500;
+  font-size: 14px;
+  height: 48px;
+  padding: 0 15px;
+  cursor: pointer;
+  margin: 50px 0;
+  outline: none;
+  border: none;
+  width: 10%;
+  min-width: 160px;
+
+}
+
+@mixin hidden{
+  display: none;
+}
+
+@mixin parallax-effect{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin button-white{
+  color: #d70f64;
+  background-color: #fff;
+  font-weight: 500;
+  width: 10%;
+  height: 48px;
+  min-width: 160px;
+  font-size: 14px;
+  height: 48px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+}
